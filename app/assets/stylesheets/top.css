@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.books-box {
+  margin: 33px;
+}
+
+.title {
+  margin: 33px 0 33px 0;
+}
+
+.text {
+  padding: 33;
+}

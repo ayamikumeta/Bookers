@@ -1,0 +1,11 @@
+<div class="show">
+<p class="show-title">
+    <strong>Title:</strong><%= @book.title %></p>
+<p class="show-body"><strong>Body:</strong><%= @book.body %></p>
+</div>
+
+<div class="show-link">
+<%= link_to "Edit", edit_book_path(@book.id) %>
+|
+<%= link_to "Back", :action => 'index' %>
+</div>

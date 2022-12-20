@@ -1,3 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*top*/
+.books {
+  margin: 33px;
+}
+
+.title {
+}
+
+.text {
+  padding-left: 33px;
+  line-height: 50px;
+}
+
+.link {
+  margin-left: 33px;
+}
+/*show*/
+.show {
+  padding-left: 80px;
+}
+
+.show-title {
+  line-height: 80px;
+}
+
+.show-link {
+  margin: 30px;
+  
+}
+/*index*/
+.bookers {
+  margin: 33px;
+}
+
+.index-title {
+  width: 182px;
+}
+
+.index-body {
+  width: 573px;
+}
+
+.index-hoge {
+  width: 150px;
+}
+
+/*new*/
+
+.new-header {
+  line-height: 60px;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
