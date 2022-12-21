@@ -1,5 +1,13 @@
 <h1>Editing Book</h1>
-<%= form_with model:@book, local:true do |f| %>
+<% if @books.errors.any? %>
+<%= @books.errors.count %>error prohibited this book from being saved:
+ <ul>
+  <% @books.errors.full_messages.each do |message| %>
+   <li><%= message %></li>
+  <% end %>
+ </ul>
+<% end %>
+<%= form_with model:@book do |f| %>
 
 <ravel for="title">Title</ravel>
 <div class="form">
@@ -14,3 +22,7 @@
 </div>
 
 <% end %>
+
+<%= link_to "Show", book_path(@book.id) %>
+|
+<%= link_to "Back", :action => 'index' %>
