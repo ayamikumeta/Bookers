@@ -1,8 +1,9 @@
+<div class="edit">
 <h1>Editing Book</h1>
-<% if @books.errors.any? %>
-<%= @books.errors.count %>error prohibited this book from being saved:
+<% if @book.errors.any? %>
+<%= @book.errors.count %>error prohibited this book from being saved:
  <ul>
-  <% @books.errors.full_messages.each do |message| %>
+  <% @book.errors.full_messages.each do |message| %>
    <li><%= message %></li>
   <% end %>
  </ul>
@@ -26,3 +27,4 @@
 <%= link_to "Show", book_path(@book.id) %>
 |
 <%= link_to "Back", :action => 'index' %>
+</div>
